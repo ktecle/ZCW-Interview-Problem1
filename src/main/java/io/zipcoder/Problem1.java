@@ -15,16 +15,9 @@ public class Problem1 {
                 myChars[i]=myMap.get(Character.toLowerCase(myChars[i]));
             }
         }
-       return  printCharacters(myChars);
+       return  new String(myChars);
     }
 
-    public String printCharacters(char[] input){
-        String result = "";
-        for(int i =0;i<input.length;i++){
-            result+=input[i];
-        }
-        return result;
-    }
 
     public Map<Character,Character> generateMap(){
         Map<Character,Character> myMap = new HashMap<Character,Character>();
